@@ -1091,23 +1091,6 @@ $</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># CONFIG = run.config</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">run</span> <span class="o">=</span> <span class="n">wandb</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">project</span><span class="o">=</span><span class="s2">"Basic_Transformer"</span><span class="p">,</span> <span class="n">entity</span><span class="o">=</span><span class="s2">"shivamshrirao"</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config_defaults</span><span class="p">)</span>
 <span class="n">CONFIG</span> <span class="o">=</span> <span class="n">wandb</span><span class="o">.</span><span class="n">config</span>
 </pre></div>
@@ -1315,22 +1298,6 @@ $</p>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&lt;wandb.wandb_torch.TorchGraph at 0x7f07a50a3110&gt;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1446,59 +1413,6 @@ $</p>
                 <span class="s1">'optimizer_state_dict'</span><span class="p">:</span> <span class="n">optimizer</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
                 <span class="s1">'epoch'</span><span class="p">:</span> <span class="n">epoch</span><span class="p">,</span>
                 <span class="p">},</span> <span class="n">run</span><span class="o">.</span><span class="n">dir</span> <span class="o">+</span> <span class="s1">'/model.pth'</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># model.load_state_dict(checkpoint['model_state_dict'])</span>
-<span class="c1"># optimizer.load_state_dict(checkpoint['optimizer_state_dict'])</span>
-<span class="c1"># init_epoch = checkpoint['epoch']</span>
 </pre></div>
 
     </div>
@@ -1646,23 +1560,6 @@ Epoch: 20/20, Train loss: 1.202, Val loss: 2.442
 </div>
     
 
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">init_epoch</span> <span class="o">=</span> <span class="n">epoch</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1747,9 +1644,6 @@ Epoch: 20/20, Train loss: 1.202, Val loss: 2.442
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
-        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -1761,7 +1655,6 @@ Epoch: 20/20, Train loss: 1.202, Val loss: 2.442
 </div>
 </div>
 
-    </details>
 <div class="output_wrapper">
 <div class="output">
 
