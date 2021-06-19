@@ -36,6 +36,8 @@ url: "https://ShivamShrirao.github.io" # the base hostname & protocol for your s
 #
 baseurl: "/blog" # the subpath of your site, e.g. "/blog".
 
+permalink: /:year/:month/:day/:title
+
 # Github and twitter are optional:
 minima:
   social_links:
